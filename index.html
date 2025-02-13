@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Francis</title>
+    <script>
+        function checkAnswer() {
+            let answer = document.getElementById("answer").value.trim();
+            if (answer === "69") {
+                window.location.href = "correct.html"; // Redirect to the correct answer page
+            } else {
+                alert("Wrong answer! Try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>You might be looking for Francis, master of the reggae arts.</h2>
+    <p>To find him, you need to answer the following question - how old is Yellow Man?</p>
+    <input type="text" id="answer" placeholder="Enter your answer">
+    <button onclick="checkAnswer()">Submit</button>
+</body>
+</html>
